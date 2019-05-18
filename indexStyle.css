@@ -1,27 +1,31 @@
 body{
-  overflow: auto;
-  }
+  margin:0px;
+}
 .navigationBar{
   list-style-type: none;
   margin: 0;
+  top:0;
   padding: 0;
   width: 100%;
-  height:7%;
+  height: 7%;
+  float: none;
   position: fixed;
-  overflow: auto;
+  overflow: hidden;
   background-color: #232a34;
   color: #ffffff;
-  margin-bottom: 0;
-  border-radius: 25px;
+  margin: 0;
+  border-radius: 50px;
 }
+
 li {
   float:right;
+  padding-right: 1%;
 }
 li a:hover {
   background-color: #343b45;
 }
 li a:active{
-  background-color: #05a081;
+  background-color: lightgreen;
 }
 .navLink{
   color: #ffffff;
@@ -29,9 +33,21 @@ li a:active{
   display: block;
   padding:14px 16px;
   text-align: center;
+  position: static;
 }
 .clearfix::after{
   content: "";
   clear: both;
   display: table;
 }
+.content{
+  padding-top: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.content::after{
+  float: none;
+  width:100%;
+  margin-top: auto;
+  height:100%;
+  }
